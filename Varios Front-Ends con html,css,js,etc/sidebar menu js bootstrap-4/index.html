@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p> 
+
+</div>
+
+<div class="container">
+
+    <h1>3 column layout</h1>
+    <div class="row">
+        <div class="col-md-4" style="background-color: #FF9999">Left</div>
+        <div class="col-md-4" style="background-color: #99CCFF">Middle</div>
+        <div class="col-md-4" style="background-color: #00CC99">Right</div>
+    </div>
+
+    <h1>Texts</h1>
+    <br>
+    <p>you can hightlight words or <mark>text using the mark</mark> tags.</p>
+
+    <blockquote>
+        <p>sometimes I wet the bed, on purpose.</p>
+        <footer>My grandpa</footer>
+    </blockquote>
+
+    <pre>hola que tal</pre>
+    <p>hola como va <code>asdasdadsasd</code></p>
+    <p>hola como va <kbd>ctrl+Alt</kbd></p>
+
+    <h4>Build in color classes</h4>
+    <p class="text-muted">text muted</p>
+    <p class="text-success">Congrats </p>
+    <p class="text-danger">danger text</p>
+</div>
+
+<div class="container">
+
+    <h1>Now go with tables</h1>
+
+    <h2>Table simple</h2>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Table condensed</h2>
+    <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Table striped</h2>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+
+<div class="container">
+    <h3>Imagenes</h3>
+    <img src="img/13240576_819354298169093_2605960261148686604_n.jpg" class="rounded" width="150" height="150">
+    <img src="img/motos.jpg" alt="" class="img-fluid">
+    <img src="img/motos.jpg" alt="">
+
+    <h3>Videos</h3>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen frameborder="0"></iframe>
+    </div>
+</div>
+
+  <div class="container"> 
+  <table class="table table-bordered table-striped bs-table" id="tabla-boots">
+    <thead>
+      <tr>
+        <th></th>
+        <th>
+          Dispositivos muy pequeños
+          <small>Teléfonos (&lt;768px)</small>
+        </th>
+        <th>
+          Dispositivos pequeños
+          <small>Tablets (≥768px)</small>
+        </th>
+        <th>
+          Dispositivos medianos
+          <small>Ordenadores (≥992px)</small>
+        </th>
+        <th>
+          Dispositivos grandes
+          <small>Ordenadores (≥1200px)</small>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Comportamiento</th>
+        <td>Las columnas se muestran siempre horizontalmente.</td>
+        <td colspan="3">Si se estrecha el navegador, las columnas se muestran verticalmente. A medida que aumenta su anchura, la rejilla muestra su aspecto horizontal normal.</td>
+      </tr>
+      <tr>
+        <th>Anchura máxima del contenedor</th>
+        <td>Ninguna (<code>auto</code>)</td>
+        <td><code>728px</code></td>
+        <td><code>940px</code></td>
+        <td><code>1170px</code></td>
+      </tr>
+      <tr class="prefix">
+        <th>Prefijo de las clases CSS</th>
+        <td><code>.col-xs-</code></td>
+        <td><code>.col-sm-</code></td>
+        <td><code>.col-md-</code></td>
+        <td><code>.col-lg-</code></td>
+      </tr>
+      <tr>
+        <th>Número de columnas</th>
+        <td colspan="4">12</td>
+      </tr>
+      <tr>
+        <th>Anchura máxima de columna</th>
+        <td><code>auto</code></td>
+        <td><code>60px</code></td>
+        <td><code>78px</code></td>
+        <td><code>95px</code></td>
+      </tr>
+      <tr>
+        <th>Separación entre columnas</th>
+        <td colspan="4"><code>30px</code> (<code>15px</code> a cada lado de la columna)</td>
+      </tr>
+      <tr>
+        <th>¿Permite anidación?</th>
+        <td colspan="4">Si</td>
+      </tr>
+      <tr>
+        <th>¿Permite desplazar columnas?</th>
+        <td>No</td>
+        <td colspan="3">Si</td>
+      </tr>
+      <tr>
+        <th>¿Permite reordenación de columnas?</th>
+        <td>No</td>
+        <td colspan="3">Si</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    color: #000;
+    background: #FFF;
+    text-align: center;
+    font-family: sans-serif;
+}
+header, section, footer {
+    width: 100%;
+    padding: 2em;
+}
+.logo, .botones {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    text-align: left;
+}
+.logo span {
+    font-size: 2.5em;
+}
+.botones {
+    width: 65%;
+    text-align: right;
+}
+.botones h4 {
+    display: inline-block;
+    font-size: 1em;
+    font-style: italic;
+}
+.botones a, .info-home a {
+    padding: .8em .1em;
+    background: #444D48;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 3px;
+}
+section {
+    background: #7c8d83;
+}
+.info-home, .img-contenedor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    text-align: left;
+}
+.info-home {
+    padding-right: 1em;
+}
+.info-home h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: .8em;
+}
+.info-home p {
+    line-height: 23px;
+    margin-bottom: 2em;
+}
+.img-contenedor img {
+    width: 100%;
+    display: block;
+}
+.logearse {
+    background: #2d3330;
+    padding-top: 1.5em;
+    height: 110px;
+    margin-top: -110px;
+}
+.logearse form input {
+    padding: .5em;
+    border-radius: .5em;
+    margin: 0 5px 20px 5px;
+}
+.logearse form input[type="button"] {
+    background: #7c8d83;
+    color: #fff;
+    padding: .5em 1em;
+}
+.logearse a {
+    color: #fff;
+    font-size: 2.2em;
+}

@@ -1,0 +1,9 @@
+
+
+-abrir la BD maria DB con la consola que provee esa BD, pass: ROOT
+-Abrir el Heidi para visualizar la BD pass ROOT
+
+-correr el servidor back-end con: node app
+
+
+-correr la aplicacion front-end con: ng serve
