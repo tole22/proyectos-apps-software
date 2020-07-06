@@ -10,3 +10,4 @@
 ## Development: open with live server extension fom VSC.
         just run in command (CTRL SHIFT P ) > Live server: open live server. On every change, the server will be refreshed.
 
+![](./img/screenshoot.png)
