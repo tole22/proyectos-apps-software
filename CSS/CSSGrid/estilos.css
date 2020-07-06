@@ -1,0 +1,44 @@
+body {
+	background: #ddd;
+	font-family: monospace;
+}
+
+.container-table {
+	width: 90%;
+	background: white;
+	margin: 50px auto;
+	box-shadow: 0 0 20px #333;
+
+	display: grid;
+	/*grid-template-columns: 100px 100px 100px 100px;*/
+	grid-template-columns: repeat(4, 25%);
+	grid-auto-rows: 50px;
+}
+
+/*el titulo ocupa toda la fila*/
+.table__title {
+	grid-column-start: 1;
+	grid-column-end: 5; 
+
+	background: rgba(40, 65, 120, 1);
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.9em; 
+}
+
+.table__header, .table__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.table__header {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.table__item {
+	padding: 10px;
+	font-size: 1.2em;
+}

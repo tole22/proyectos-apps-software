@@ -1,0 +1,18 @@
+/* HEADER */
+header {
+    width: 100%;
+    background: #55d6aa;
+    position: fixed;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+header img {
+    width: 13%;
+}

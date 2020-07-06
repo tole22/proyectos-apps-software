@@ -1,0 +1,11 @@
+/* BANNER */
+.banner-header {
+    margin: 0;
+    background-image: url(../img/banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

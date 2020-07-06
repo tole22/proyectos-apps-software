@@ -1,0 +1,35 @@
+.new-post-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-post-container form {
+    margin-bottom: 20px;
+}
+.new-post-container form input.mat-flat-button{
+    width: 100%;
+    background: #4e0561;
+}
+.new-post-container form input.mat-flat-button:hover{
+    background: #3c034b;
+}
+.new-post-container form input[type=file]{
+    display: none;
+}
+.new-post-container mat-form-field {
+    width: 100%;
+}
+
+.container-input-file .custom-file {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 0;
+    cursor: pointer;
+    width: 100%;
+}
+.container-input-file .container-button {
+    min-height: 80px;
+}
+.container-input-file {
+    margin: 2rem 0;
+}
