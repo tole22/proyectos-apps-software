@@ -25,4 +25,4 @@ Compile scss files and receive new styles changes:
         But in gulp 4.x you need to pass the task name in a function as follow.
         gulp.watch('app/**/*.js', gulp.series('js'));
 
-
+![](./img/screenshoot.png)
