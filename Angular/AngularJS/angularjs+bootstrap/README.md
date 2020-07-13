@@ -1,6 +1,10 @@
 # Preview
 ![](screenshot.png)
 
-# Code
-- src, is the source code of the website
-- docs, have images, and text about this website
+# What used
+- Angular JS simple add and list items.
+- Boostrap
+
+# How to run
+- open index.html on browser or with ctrl shif P -> open vsc live server
+
