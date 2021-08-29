@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "todolist-5000e"
+  },
+  "targets": {
+    "todolist-5000e": {
+      "hosting": {
+        "todo-list-app": [
+          "todolist-5000e"
+        ]
+      }
+    }
+  }
+}

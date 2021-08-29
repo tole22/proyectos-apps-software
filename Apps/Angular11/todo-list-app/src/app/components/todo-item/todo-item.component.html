@@ -1,0 +1,49 @@
+<div class="todo-item">
+  <div class="todo-item-left">
+    <input type="checkbox" [(ngModel)]="todo.completed">
+    <!-- <div *ngIf="!todo.editing; else editingTodo" 
+            class="todo-item-label" 
+            (dblclick)="todoService.editTodo(todo)"
+            [ngClass]="{ 'completed' : todo.completed }"
+            >{{ todo.title }}</div> -->
+    <div *ngIf="!todo.editing; else editingTodo" class="todo-item-label" [ngClass]="{ 'completed' : todo.completed }">
+      {{ todo.title }}</div>
+    <ng-template #editingTodo>
+      <!-- <input type="text" class="todo-item-edit" [(ngModel)]="todo.title" 
+                (blur)="todoService.doneEdit(todo)"
+                (keyup.enter)="todoService.doneEdit(todo)" 
+                (keyup.esc)="todoService.cancelEdit(todo)" 
+                autofocus> -->
+
+      <input type="text" class="todo-item-edit" [(ngModel)]="todo.title" autofocus>
+    </ng-template>
+  </div>
+    <div class="remove-item">
+    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalLong">
+      Remove
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Remove Todo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3 class="font-weight-bold">Are you sure to remove the ToDO:</h3>
+          <h3><small>{{ todo.title }}</small></h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="todoService.deleteTodo(todo.id)">Delete ToDo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
