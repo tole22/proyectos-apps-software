@@ -1,0 +1,9 @@
+.red {
+    background: red;
+}
+
+.completed {
+    font-size: 20px;
+    color: gray;
+    text-decoration: none
+}
