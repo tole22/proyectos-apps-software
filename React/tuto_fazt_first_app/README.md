@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## React APP simple para entender conceptos de la libreria, ruteo, clases, objetos, etc...
 
-![Site image](img/screenshot.png)
+![Site image](img/screenshot_react.png)
 
 ## Available Scripts
 
