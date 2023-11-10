@@ -1,0 +1,28 @@
+
+
+<div class="d-grip">
+    <a routerLink="/create" class="btn btn-primary" type="button">Create</a>
+</div>
+
+<table class="table table-hover table-striped">
+    <thead class="bg-gradient text-white">
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Author</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor='let persona of Personas'>
+            <td>{{ persona.name }}</td>
+            <td>{{ persona.lastname }}</td>
+            <td>{{ persona.email }}</td>
+            <td>
+                <button routerLink="/edit/{{persona.id}}" class="btn btn-outline-secondary"><i class="fa-solid fa-user-pen"></i></button>
+                <button (click)="deleteRow(persona)" class="btn btn-outline-danger"><i class="fa-solid fa-user-slash"></i></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
